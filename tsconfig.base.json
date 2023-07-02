@@ -73,6 +73,9 @@
       "@activepieces/piece-google-contacts": [
         "packages/pieces/google-contacts/src/index.ts"
       ],
+      "@activepieces/piece-google-docs": [
+        "packages/pieces/google-docs/src/index.ts"
+      ],
       "@activepieces/piece-google-drive": [
         "packages/pieces/google-drive/src/index.ts"
       ],
@@ -96,6 +99,9 @@
         "packages/pieces/instagram-business/src/index.ts"
       ],
       "@activepieces/piece-intercom": ["packages/pieces/intercom/src/index.ts"],
+      "@activepieces/piece-invoiceninja": [
+        "packages/pieces/invoiceninja/src/index.ts"
+      ],
       "@activepieces/piece-jotform": ["packages/pieces/jotform/src/index.ts"],
       "@activepieces/piece-kizeo-forms": [
         "packages/pieces/kizeo-forms/src/index.ts"
