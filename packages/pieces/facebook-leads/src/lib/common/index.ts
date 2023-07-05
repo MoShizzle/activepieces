@@ -135,6 +135,30 @@ export const facebookLeadsCommon = {
         const response = await httpClient.sendRequest(request);
         return response.body.data;
     },
+
+    getLeadDetails: async (leadId: string, accessToken: string) => {
+        const response = await httpClient.sendRequest({
+            method: HttpMethod.GET,
+            url: `${facebookLeadsCommon.baseUrl}/${leadId}`,
+            queryParams: {
+                access_token: accessToken
+            }
+        });
+
+        return response.body;
+    },
+
+    loadSampleData: async (formId: string, accessToken: string) => {
+        const response = await httpClient.sendRequest({
+            method: HttpMethod.GET,
+            url: `${facebookLeadsCommon.baseUrl}/${formId}/leads`,
+            queryParams: {
+                access_token: accessToken
+            }
+        });
+
+        return response.body;
+    }
 }
 
 export interface FacebookOAuth2 {
